@@ -302,3 +302,33 @@ function animateConfetti() {
 // Only run this if we are near top? Or always run but fade out?
 initConfetti();
 animateConfetti();
+
+/* --- PARKING MODAL LOGIC --- */
+const modal = document.getElementById("parking-modal");
+const btn = document.getElementById("parking-btn");
+const closeBtn = document.querySelector(".close-btn");
+
+if (btn && modal && closeBtn) {
+    btn.onclick = function () {
+        modal.style.display = "flex";
+        // Small delay to trigger CSS transition
+        setTimeout(() => {
+            modal.classList.add('show');
+        }, 10);
+    }
+
+    function closeModal() {
+        modal.classList.remove('show');
+        setTimeout(() => {
+            modal.style.display = "none";
+        }, 300); // Match CSS transition time
+    }
+
+    closeBtn.onclick = closeModal;
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            closeModal();
+        }
+    }
+}

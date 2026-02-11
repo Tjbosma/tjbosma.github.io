@@ -4,7 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verjaardagsfeest</title>
+    <title>Tyghe-Jan's Feest</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Open Graph / Link Embed -->
+    <meta property="og:title" content="Tyghe-Jan's Feest">
+    <meta property="og:description"
+        content="Je bent uitgenodigd voor het feest van het jaar op zaterdag 14 maart. Bekijk alle informatie over de locatie, tijd en cadeautips online op de officiële uitnodiging.">
+    <meta property="og:site_name" content="Tyghe-Jan's Verjaardagsfeest">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="nl_NL">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
@@ -14,6 +25,25 @@
 <body>
     <canvas id="particle-canvas"></canvas>
     <canvas id="confetti-canvas"></canvas>
+
+    <!-- Parking Modal -->
+    <div id="parking-modal" class="modal">
+        <div class="modal-content glass">
+            <span class="close-btn">&times;</span>
+            <h2>PARKEREN</h2>
+            <div class="modal-body">
+                <i class="fa-solid fa-square-parking parking-icon"></i>
+                <p class="warning">LET OP: DEZE WEG (SCHOTERLANDSEWEG) IS DOODLOPEND!</p>
+                <p>Je kan parkeren bij de school, halverwege de <strong>Aise Bruggenswei</strong>.</p>
+                <p class="small-info">Er zijn daar ongeveer 15 parkeerplaatsen beschikbaar.</p>
+
+                <div class="coords-box">
+                    <a href="https://www.google.com/maps/search/?api=1&query=52.987250,6.145278" target="_blank"
+                        class="copy-btn"><i class="fa-solid fa-map-location-dot"></i> Maps</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <header class="hero">
         <div class="hero-content fade-in-up">
@@ -39,6 +69,9 @@
     </header>
 
     <main>
+                    <div class="hero-credits">
+                <span>By Tyghe Jan</span>
+            </div>
         <section id="info" class="section">
             <h2 class="section-title">INFO</h2>
             <div class="grid-container">
@@ -76,8 +109,20 @@
                 <h3>PIPEGAELTSJE</h3>
                 <p>Schoterlandseweg 221</p>
                 <p>8411 ZE Jubbega</p>
-                <a href="https://maps.google.com/?q=Schoterlandseweg+221,+8411+ZE+Jubbega" target="_blank"
-                    class="map-btn">ROUTE</a>
+                <div class="btn-group">
+                    <a href="https://maps.google.com/?q=Schoterlandseweg+221,+8411+ZE+Jubbega" target="_blank"
+                        class="map-btn">ROUTE</a>
+                    <button id="parking-btn" class="map-btn secondary-btn">PARKEREN INFO</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="gifts" class="section">
+            <h2 class="section-title">CADEAU TIPS</h2>
+            <div class="gift-card glass">
+                <i class="fa-solid fa-envelope-open-text gift-icon"></i>
+                <h3>ENVELOPJE</h3>
+                <p>Sparen voor iets moois!</p>
             </div>
         </section>
     </main>
