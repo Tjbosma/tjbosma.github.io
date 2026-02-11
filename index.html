@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verjaardagsfeest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="particle-canvas"></canvas>
+    <canvas id="confetti-canvas"></canvas>
+
+    <header class="hero">
+        <div class="hero-content fade-in-up">
+            <h1 class="glitch" data-text="JE BENT UITGENODIGD">JE BENT UITGENODIGD</h1>
+            <p class="subtitle">VOOR MIJN 18 JAAR BESTAAN</p>
+            <div class="date-time">
+                <span class="highlight">ZATERDAG 14 MAART</span>
+                <span class="separator">|</span>
+                <span class="highlight">16:00 UUR</span>
+            </div>
+            <a href="#info" class="cta-btn">DETAILS</a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="info" class="section">
+            <h2 class="section-title">INFO</h2>
+            <div class="grid-container">
+                <div class="card glass">
+                    <h3>WANNEER</h3>
+                    <p>Zaterdag 14 Maart</p>
+                    <p class="sub-text">Zet het in je agenda</p>
+                </div>
+                <div class="card glass">
+                    <h3>TIJD</h3>
+                    <p>Vanaf 16:00</p>
+                    <p class="sub-text">Tot 20:00/21:00+ uur</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="food" class="section">
+            <h2 class="section-title">ETEN & DRINKEN</h2>
+            <div class="menu-container glass">
+                <div class="menu-item">
+                    <h3>DE BAR</h3>
+                    <p>De tap is open! Ook genoeg fris, radler en 0% voor iedereen.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>FOOD</h3>
+                    <p>Verse <strong>mini pizza's</strong> en <strong>BBQ</strong></p>
+                    <p>(Inclusief vegetarische optie)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="location" class="section">
+            <h2 class="section-title">LOCATIE</h2>
+            <div class="location-card glass">
+                <h3>PIPEGAELTSJE</h3>
+                <p>Schoterlandseweg 221</p>
+                <p>8411 ZE Jubbega</p>
+                <a href="https://maps.google.com/?q=Schoterlandseweg+221,+8411+ZE+Jubbega" target="_blank"
+                    class="map-btn">ROUTE</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Het bier staat koud en de pizza's warm. Tot dan! <br>(Vragen of afmelden? 06-41887225)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
